@@ -32,6 +32,7 @@ jobs:
     name: Deploy to Production
     needs: e2e
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - name: Deploy
         run: echo Hello, world!
